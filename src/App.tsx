@@ -6,7 +6,7 @@ import { AppWorkspace } from './AppWorkspace'
 import { errorText, tone } from './lib'
 import { getSessionId } from './session'
 
-const REPO_URL = 'https://github.com/get-convex/convex-daytona-app-builder'
+const REPO_URL = 'https://github.com/convex/convex-daytona-app-builder'
 const MAX_PROMPT_CHARS = 500
 const EXAMPLES = [
   'A pomodoro timer with a circular progress ring',

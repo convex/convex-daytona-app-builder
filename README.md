@@ -22,7 +22,7 @@ What you can see on screen:
 You need Node 20+, a Convex account and a [Daytona API key](https://app.daytona.io/dashboard/keys).
 
 ```bash
-git clone https://github.com/get-convex/convex-daytona-app-builder
+git clone https://github.com/convex/convex-daytona-app-builder
 cd convex-daytona-app-builder
 npm install
 npx convex dev --once          # creates your deployment (the first push asks for the key below)
@@ -48,7 +48,7 @@ model: openai('gpt-5.4'), // was: model: convexGateway(MODEL),
 
 ### Host the frontend on Convex
 
-The frontend is served from your deployment with [`@convex-dev/static-hosting`](https://github.com/get-convex/static-hosting):
+The frontend is served from your deployment with [`@convex-dev/static-hosting`](https://github.com/convex/static-hosting):
 
 ```bash
 npm run upload:dev   # build + upload to your dev deployment: https://<deployment>.convex.site
