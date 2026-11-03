@@ -12,7 +12,10 @@ const app = defineApp({
   // The static frontend owns the root of https://<deployment>.convex.site.
   httpPrefix: '/api',
 })
-app.use(daytona)
+app.use(daytona, {
+  // Passed by reference so the runBackground poller can read the key without it being stored.
+  env: { DAYTONA_API_KEY: app.env.DAYTONA_API_KEY },
+})
 app.use(rateLimiter)
 app.use(staticHosting, { httpPrefix: '/' })
 

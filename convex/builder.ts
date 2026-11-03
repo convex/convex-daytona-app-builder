@@ -79,7 +79,7 @@ export const createApp = internalAction({
 })
 
 /**
- * runBackground has no "on finished" callback, only the reactive execution
+ * This demo doesn't use runBackground's newer onComplete callback, only the reactive execution
  * row. So we check that row once a second (a cheap mutation, nothing held
  * open) and move on to the dev server once npm is done.
  */

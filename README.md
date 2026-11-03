@@ -101,7 +101,7 @@ export const installLogs = query({
 })
 ```
 
-`runBackground` doesn't have an "on finished" callback, so `builder.waitForInstall` is a small mutation that checks the execution row every second and schedules the dev server step once npm is done. Nothing sits waiting in an action.
+`builder.waitForInstall` watches the execution row rather than using `runBackground`'s newer `onComplete` callback. It is a small mutation that checks the execution row every second and schedules the dev server step once npm is done. Nothing sits waiting in an action.
 
 ## Abuse protection and the 12 hour reset
 
